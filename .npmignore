@@ -1,9 +1,6 @@
 !lib/
-src/
 .babelrc
 .browserslistrc
-.eslintignore
-.eslintrc
 .gitignore
 .npmignore
 terser.json
