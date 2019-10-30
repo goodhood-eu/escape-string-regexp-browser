@@ -16,7 +16,7 @@
   "scripts": {
     "reinstall": "rm -rf node_modules package-lock.json && npm install && npm run build",
     "clean": "rm -rf ./lib/ || exit 1",
-    "compile": "babel ./node_modules/escape-string-regexp/index.js --out-file ./lib --config-file ./.babelrc",
+    "compile": "babel ./node_modules/escape-string-regexp/index.js --out-dir ./lib --config-file ./.babelrc",
     "minify": "find ./lib -name '*.js' -exec terser {} -o {} --config-file terser.json \\;",
     "build": "npm run clean && npm run compile && npm run minify"
   },
